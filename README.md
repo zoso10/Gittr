@@ -1,6 +1,6 @@
 # Gittr
 
-TODO: Write a gem description
+Gittr is a Ruby wrapper for the Gitter chat client REST API. Check out [Gitter](https://gitter.im/) if you haven't already!
 
 ## Installation
 
@@ -20,11 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Usage to come very soon ;)
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/gittr/fork )
+1. Fork it ( https://github.com/zoso10/gittr/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

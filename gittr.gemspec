@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["tewing10@gmail.com"]
   spec.summary       = %q{Gitter REST API wrapper}
   spec.description   = %q{Gittr is a Ruby wrapper for the Gitter chat client REST API.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/zoso10/Gittr"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
