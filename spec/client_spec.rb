@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Gittr::Client do
-  subject(:client) { Gittr::Client.new('804870a200eac2a8d44e20d1efbc8552c9265539') }
+  subject(:client) { Gittr::Client.new('redacted') }
 
   it 'raises an exception with no token' do
     expect{ Gittr::Client.new }.to raise_error
@@ -19,7 +19,7 @@ describe Gittr::Client do
     VCR.use_cassette('rooms') do
       rooms = client.rooms
       expect(rooms.count).to eq(1)
-      expect(rooms[0]["name"]).to eq('zoso10/skriv')
+      expect(rooms[0].name).to eq('zoso10/skriv')
     end
   end
 
@@ -41,10 +41,10 @@ describe Gittr::Client do
 
   it 'should join room and be admin' do
     VCR.use_cassette('join_room') do
-      response = client.join_room('zoso10/gittr')
-      expect(response["name"]).to eq("zoso10/Gittr")
-      expect(response["userCount"]).to eq(1)
-      expect(response["users"][0]["role"]).to eq("admin")
+      room = client.join_room('zoso10/gittr')
+      expect(room.name).to eq('zoso10/Gittr')
+      expect(room.user_count).to eq(1)
+      expect(room.users[0]['role']).to eq('admin')
     end
   end
 end

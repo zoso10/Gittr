@@ -12,7 +12,7 @@ module Gittr
 
     def rooms
       response = self.class.get('/rooms', headers: @headers)
-      response.parsed_response
+      response.parsed_response.map{ |room| Room.new(room) }
     end
 
     def rooms_users(room_id)
@@ -27,7 +27,7 @@ module Gittr
 
     def join_room(uri)
       response = self.class.post('/rooms', headers: @headers, query: {uri: uri})
-      response.parsed_response
+      Room.new(response.parsed_response)
     end
   end
 end
