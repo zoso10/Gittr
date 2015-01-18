@@ -6,6 +6,8 @@ require 'bundler/setup'
 Bundler.setup
 
 require 'vcr'
+require 'pry'
+require 'pry-byebug'
 require 'gittr'
 
 RSpec.configure do |config|

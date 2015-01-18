@@ -14,5 +14,20 @@ module Gittr
       response = self.class.get('/rooms', headers: @headers)
       response.parsed_response
     end
+
+    def rooms_users(room_id)
+      response = self.class.get("/rooms/#{room_id}/users", headers: @headers)
+      response.parsed_response
+    end
+
+    def rooms_channels(room_id)
+      response = self.class.get("/rooms/#{room_id}/channels", headers: @headers)
+      response.parsed_response
+    end
+
+    def join_room(uri)
+      response = self.class.post('/rooms', headers: @headers, query: {uri: uri})
+      response.parsed_response
+    end
   end
 end

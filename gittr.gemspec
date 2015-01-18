@@ -26,4 +26,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "webmock"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "codeclimate-test-reporter"
+  spec.add_development_dependency "pry"
+  spec.add_development_dependency "pry-byebug"
 end
