@@ -1,8 +1,9 @@
 require 'httparty'
 
 require 'gittr/version'
-require 'gittr/client'
 require 'gittr/hash_constructor'
+require 'gittr/client'
+require 'gittr/room'
 
 module Gittr
 
