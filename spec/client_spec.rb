@@ -27,8 +27,8 @@ describe Gittr::Client do
     VCR.use_cassette('rooms_users') do
       users = client.rooms_users('54b7e136db8155e6700eb569')
       expect(users.count).to eq(2)
-      expect(users[0]["username"]).to eq('zoso10')
-      expect(users[0]["displayName"]).to eq('Tyler Ewing')
+      expect(users[0].username).to eq('zoso10')
+      expect(users[0].display_name).to eq('Tyler Ewing')
     end
   end
 
@@ -44,7 +44,9 @@ describe Gittr::Client do
       room = client.join_room('zoso10/gittr')
       expect(room.name).to eq('zoso10/Gittr')
       expect(room.user_count).to eq(1)
-      expect(room.users[0]['role']).to eq('admin')
+      expect(room.users[0].username).to eq('zoso10')
+      expect(room.users[0].display_name).to eq('Tyler Ewing')
+      expect(room.users[0].role).to eq('admin')
     end
   end
 end

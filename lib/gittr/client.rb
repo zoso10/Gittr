@@ -17,7 +17,7 @@ module Gittr
 
     def rooms_users(room_id)
       response = self.class.get("/rooms/#{room_id}/users", headers: @headers)
-      response.parsed_response
+      response.parsed_response.map{ |user| User.new(user) }
     end
 
     def rooms_channels(room_id)
