@@ -1,4 +1,7 @@
-require "gittr/version"
+require 'httparty'
+
+require 'gittr/version'
+require 'gittr/client'
 
 module Gittr
 

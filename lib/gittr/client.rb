@@ -1,0 +1,18 @@
+module Gittr
+  class Client
+    include HTTParty
+
+    base_uri 'https://api.gitter.im/v1/'
+
+    def initialize(token=Gittr.token)
+      @token = token
+      @headers = {"Accept" => "application/json", "Authorization" => "Bearer #{@token}", "Content-Type" => "application/json"}
+      raise StandardError.new('API Token is missing') unless @token
+    end
+
+    def rooms
+      response = self.class.get('/rooms', headers: @headers)
+      response.parsed_response
+    end
+  end
+end
