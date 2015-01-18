@@ -1,5 +1,8 @@
 # Gittr
 
+[![Code Climate](https://codeclimate.com/github/zoso10/Gittr/badges/gpa.svg)](https://codeclimate.com/github/zoso10/Gittr) [![Code Climate](https://codeclimate.com/github/zoso10/Gittr/badges/gpa.svg)](https://codeclimate.com/github/zoso10/Gittr)
+[![Circle CI](https://circleci.com/gh/zoso10/Gittr.svg?style=svg)](https://circleci.com/gh/zoso10/Gittr)
+
 Gittr is a Ruby wrapper for the Gitter chat client REST API. Check out [Gitter](https://gitter.im/) if you haven't already!
 
 ## Installation

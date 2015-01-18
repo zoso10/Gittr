@@ -1,3 +1,6 @@
+machine:
+  environment:
+    CODECLIMATE_REPO_TOKEN: 7f60dc04d59e21c8022f8924f3b0fdf87195f03435968e89ec0850a79175349c
 dependencies:
   pre:
     - gem install bundler --pre
