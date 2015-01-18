@@ -1,5 +1,13 @@
 require "gittr/version"
 
 module Gittr
-  # Your code goes here...
+
+  class << self
+    attr_accessor :token
+
+    def configure
+      return enum_for(__callee__) unless block_given?
+      yield self
+    end
+  end
 end
