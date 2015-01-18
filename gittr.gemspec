@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Gittr::VERSION
   spec.authors       = ["Tyler Ewing"]
   spec.email         = ["tewing10@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Gitter REST API wrapper}
+  spec.description   = %q{Gittr is a Ruby wrapper for the Gitter chat client REST API.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
