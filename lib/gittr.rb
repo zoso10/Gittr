@@ -4,6 +4,7 @@ require 'gittr/version'
 require 'gittr/hash_constructor'
 require 'gittr/room'
 require 'gittr/user'
+require 'gittr/channel'
 require 'gittr/client'
 
 module Gittr
