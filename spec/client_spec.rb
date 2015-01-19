@@ -3,10 +3,6 @@ require 'spec_helper'
 describe Gittr::Client do
   subject(:client) { Gittr::Client.new('redacted') }
 
-  it 'raises an exception with no token' do
-    expect{ Gittr::Client.new }.to raise_error
-  end
-
   it 'should not raise an exception' do
     expect{
       Gittr.configure{ |config| config.token='asdf'}
