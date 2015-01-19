@@ -1,0 +1,292 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.gitter.im/v1/rooms/54b7e136db8155e6700eb569/chatMessages
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer redacted
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Expose-Headers:
+      - X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 19 Jan 2015 11:59:26 GMT
+      Etag:
+      - W/"JcUQ/JkncJa96HHGFtRbbA=="
+      Server:
+      - nginx
+      Vary:
+      - Origin
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '99'
+      X-Ratelimit-Reset:
+      - '1421668826819'
+      X-Server-Id:
+      - app-003
+      X-Upstream:
+      - 127.0.0.1:5025
+      Content-Length:
+      - '30550'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":"54b813d8573df0f923452810","text":"thats pretty cool","html":"thats
+        pretty cool","sent":"2015-01-15T19:24:08.324Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b813f6573df0f923452819","text":"geesh,
+        no wonder i felt so jaded after work yesterday. i worked 9 hours and 52 minutes.","html":"geesh,
+        no wonder i felt so jaded after work yesterday. i worked 9 hours and 52 minutes.","sent":"2015-01-15T19:24:38.639Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b81470573df0f923452834","text":"oh
+        man! why you working so long?","html":"oh man! why you working so long?","sent":"2015-01-15T19:26:40.723Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b814df723506dd0c0ed7c3","text":"i
+        don''t remember. i think i was reading some stuff that i wanted to finish","html":"i
+        don&#39;t remember. i think i was reading some stuff that i wanted to finish","sent":"2015-01-15T19:28:31.977Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b816d1723506dd0c0ed828","text":"ah
+        ok","html":"ah ok","sent":"2015-01-15T19:36:49.426Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b81851573df0f923452914","text":"bah!!
+        Finally found an issue I''ve been hunting for, for a while","html":"bah!!
+        Finally found an issue I&#39;ve been hunting for, for a while","sent":"2015-01-15T19:43:13.820Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b8185d723506dd0c0ed868","text":"regex
+        was incorrect, needed it to ignore case","html":"regex was incorrect, needed
+        it to ignore case","sent":"2015-01-15T19:43:25.791Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b8198d573df0f923452975","text":"a
+        (A-Z|a-z) kind of thing?","html":"a (A-Z|a-z) kind of thing?","sent":"2015-01-15T19:48:29.569Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b81b49723506dd0c0ed92e","text":"just
+        did /asdf/i","html":"just did /asdf/i","sent":"2015-01-15T19:55:53.234Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b81b4d73b182a117e9ca37","text":"i
+        for ignore case","html":"i for ignore case","sent":"2015-01-15T19:55:57.501Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b81b73573df0f923452a0c","text":"i
+        see","html":"i see","sent":"2015-01-15T19:56:35.253Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b825b9573df0f923452c6b","text":"Holy
+        cow, i just spent like a milion years working on this CodeEval: https://www.codeeval.com/open_challenges/113/","html":"Holy
+        cow, i just spent like a milion years working on this CodeEval: <a href=\"https://www.codeeval.com/open_challenges/113/\"
+        rel=\"nofollow\" target=\"_blank\" class=\"link\">https://www.codeeval.com/open_challenges/113/</a>","sent":"2015-01-15T20:40:25.107Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[{"url":"https://www.codeeval.com/open_challenges/113/"}],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b825cb573df0f923452c73","text":"i
+        finally got it to compile and it worked the first time I tried with test input","html":"i
+        finally got it to compile and it worked the first time I tried with test input","sent":"2015-01-15T20:40:43.171Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b82616723506dd0c0edbe7","text":"eh,
+        but i''m displaying it wrong, of course","html":"eh, but i&#39;m displaying
+        it wrong, of course","sent":"2015-01-15T20:41:58.150Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b826e973b182a117e9cd0a","text":"haha
+        hate that! they worry too much about the format of the output","html":"haha
+        hate that! they worry too much about the format of the output","sent":"2015-01-15T20:45:29.036Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b82747573df0f923452cba","text":"did
+        you do it in C?","html":"did you do it in C?","sent":"2015-01-15T20:47:03.280Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b82906723506dd0c0edc95","text":"Haskell.
+        It is an easy level problem (multiply two given list) but it turns out hard
+        in Haskell.","html":"Haskell. It is an easy level problem (multiply two given
+        list) but it turns out hard in Haskell.","sent":"2015-01-15T20:54:30.371Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b8291b573df0f923452d30","text":"```haskell\nimport
+        System.Environment (getArgs)\n\nmain :: IO ()\nmain = do\n    [filename] <-
+        getArgs\n    fileContent <- readFile filename\n    let linesList = lines fileContent\n    let
+        resultList = map parseLine linesList\n    mapM_ printResults resultList\n    where
+        parseLine xs = let numList = words xs\n                             firstHalf
+        = map (\\x -> read x :: Int) $ take (fromEnum ((fromIntegral (length numList
+        - 1)) / 2)) numList\n                             secondHalf = map (\\x ->
+        read x :: Int) $ drop (fromEnum ((fromIntegral (length numList + 1)) / 2))
+        numList\n                         in multiplyList firstHalf secondHalf\n          printResults
+        xs = putStrLn $ unwords $ map show xs\n\nmultiplyList :: Num a => [a] -> [a]
+        -> [a]\nmultiplyList [] _ = []\nmultiplyList _ [] = []\nmultiplyList (x:[])
+        (y:[]) = x*y : []\nmultiplyList (x:xs) (y:ys) = x*y : multiplyList xs ys\n```","html":"<pre><code
+        class=\"haskell\"><span class=\"import\"><span class=\"keyword\">import</span>
+        System.Environment <span class=\"container\">(<span class=\"title\">getArgs</span>)</span></span>\n\n<span
+        class=\"title\">main</span> :: <span class=\"type\">IO</span> ()\n<span class=\"title\">main</span>
+        = <span class=\"keyword\">do</span>\n    [filename] &lt;- getArgs\n    fileContent
+        &lt;- readFile filename\n    <span class=\"keyword\">let</span> linesList
+        = lines fileContent\n    <span class=\"keyword\">let</span> resultList = map
+        parseLine linesList\n    mapM_ printResults resultList\n    <span class=\"keyword\">where</span>
+        parseLine xs = <span class=\"keyword\">let</span> numList = words xs\n                             firstHalf
+        = map (\\x -&gt; read x :: <span class=\"type\">Int</span>) $ take (fromEnum
+        ((fromIntegral (length numList - <span class=\"number\">1</span>)) / <span
+        class=\"number\">2</span>)) numList\n                             secondHalf
+        = map (\\x -&gt; read x :: <span class=\"type\">Int</span>) $ drop (fromEnum
+        ((fromIntegral (length numList + <span class=\"number\">1</span>)) / <span
+        class=\"number\">2</span>)) numList\n                         <span class=\"keyword\">in</span>
+        multiplyList firstHalf secondHalf\n          printResults xs = putStrLn $
+        unwords $ map show xs\n\n<span class=\"title\">multiplyList</span> :: <span
+        class=\"type\">Num</span> a =&gt; [a] -&gt; [a] -&gt; [a]\n<span class=\"title\">multiplyList</span>
+        [] _ = []\n<span class=\"title\">multiplyList</span> _ [] = []\n<span class=\"title\">multiplyList</span>
+        (x:[]) (y:[]) = x*y : []\n<span class=\"title\">multiplyList</span> (x:xs)
+        (y:ys) = x*y : multiplyList xs ys</code></pre>","sent":"2015-01-15T20:54:51.369Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b82942573df0f923452d34","text":"wow...
+        that is the closest i''ve ever gotten to a full 35 points on an easy problem","html":"wow...
+        that is the closest i&#39;ve ever gotten to a full 35 points on an easy problem","sent":"2015-01-15T20:55:30.286Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b8299a73b182a117e9cd93","text":"nice!","html":"nice!","sent":"2015-01-15T20:56:58.113Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b829b073b182a117e9cd9d","text":"```ruby\nFile.open(ARGV[0]).each_line
+        do |line|\n    ar1, ar2 = line.split(''|'').map(&:split)\n    ar1.each_with_index{|n,i|
+        print \"#{n.to_i * ar2[i].to_i} \"}\n    puts\nend\n```","html":"<pre><code
+        class=\"ruby\"><span class=\"constant\">File</span>.open(<span class=\"constant\">ARGV</span>[<span
+        class=\"number\">0</span>]).each_line <span class=\"keyword\">do</span> |line|\n    ar1,
+        ar2 = line.split(<span class=\"string\">''|''</span>).map(&amp;<span class=\"symbol\">:split</span>)\n    ar1.each_with_index{|n,i|
+        print <span class=\"string\">\"<span class=\"subst\">#{n.to_i * ar2[i].to_i}</span>
+        \"</span>}\n    puts\n<span class=\"keyword\">end</span></code></pre>","sent":"2015-01-15T20:57:20.519Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b829b4573df0f923452d4e","text":"thats
+        what i did in ruby","html":"thats what i did in ruby","sent":"2015-01-15T20:57:24.637Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b829c2573df0f923452d51","text":":(","html":":(","sent":"2015-01-15T20:57:38.459Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b829c9723506dd0c0edcb7","text":"ranking
+        was pretty poor at 31.635 lololol","html":"ranking was pretty poor at 31.635
+        lololol","sent":"2015-01-15T20:57:45.998Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b829cb723506dd0c0edcb9","text":"or
+        rather :''(","html":"or rather :&#39;(","sent":"2015-01-15T20:57:47.103Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b829ce723506dd0c0edcbb","text":"typical
+        ruby","html":"typical ruby","sent":"2015-01-15T20:57:50.637Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b829dd73b182a117e9cdaa","text":"i
+        did a lot of shortcuts :grin: ","html":"i did a lot of shortcuts :grin: ","sent":"2015-01-15T20:58:05.568Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b829ff73b182a117e9cdb1","text":"Now
+        that I look at all my scores, my C/C++ solutions are usually .010 pointers
+        more but my haskell solution is 34.939","html":"Now that I look at all my
+        scores, my C/C++ solutions are usually .010 pointers more but my haskell solution
+        is 34.939","sent":"2015-01-15T20:58:39.694Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b82a21723506dd0c0edcd2","text":"wow
+        thats so close!!","html":"wow thats so close!!","sent":"2015-01-15T20:59:13.398Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b82a27723506dd0c0edcd4","text":"theyre
+        still using Ruby 1.9.3","html":"theyre still using Ruby 1.9.3","sent":"2015-01-15T20:59:19.113Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b82a39723506dd0c0edcd5","text":"2.2.0
+        is out :/","html":"2.2.0 is out :/","sent":"2015-01-15T20:59:37.254Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b82a46573df0f923452d67","text":"yeah,
+        i notice that they tend to be quite behind","html":"yeah, i notice that they
+        tend to be quite behind","sent":"2015-01-15T20:59:50.611Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b82a7d723506dd0c0edce7","text":"my
+        python solution to a different problem is 30.908 with it''s 191 ms runtime
+        and 4.29MB of data usage","html":"my python solution to a different problem
+        is 30.908 with it&#39;s 191 ms runtime and 4.29MB of data usage","sent":"2015-01-15T21:00:45.715Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b82ac4573df0f923452d84","text":"i''m
+        sad that most of the stuff in my Haskell code is just getting around the type
+        system or dealing with IO","html":"i&#39;m sad that most of the stuff in my
+        Haskell code is just getting around the type system or dealing with IO","sent":"2015-01-15T21:01:56.334Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b82bb8573df0f923452dad","text":"using
+        Lua is a lot like using Python or Ruby (more like JavaScript I guess) and
+        it get similar scores compared to my C/C++ and Haskell code","html":"using
+        Lua is a lot like using Python or Ruby (more like JavaScript I guess) and
+        it get similar scores compared to my C/C++ and Haskell code","sent":"2015-01-15T21:06:00.906Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b82def73b182a117e9ce81","text":"Maybe
+        I''ll do some in that then. ","html":"Maybe I&#39;ll do some in that then.
+        ","sent":"2015-01-15T21:15:27.241Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":2,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b82dfd573df0f923452e2c","text":"Ruby
+        can never be a contender for most points","html":"Ruby can never be a contender
+        for most points","sent":"2015-01-15T21:15:41.441Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":2,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b82e0773b182a117e9ce8b","text":"maybe
+        least amount of lines","html":"maybe least amount of lines","sent":"2015-01-15T21:15:51.798Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":2,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b830e873b182a117e9cf75","text":"according
+        to the benchmarks game, ruby is always smaller than Haskell, and Haskell is
+        often smaller than C or C++","html":"according to the benchmarks game, ruby
+        is always smaller than Haskell, and Haskell is often smaller than C or C++","sent":"2015-01-15T21:28:08.666Z","editedAt":"2015-01-15T21:28:18.687Z","fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":2},{"id":"54b83119723506dd0c0ede60","text":"Smaller
+        as in?","html":"Smaller as in?","sent":"2015-01-15T21:28:57.405Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b8311e73b182a117e9cf90","text":"code
+        size","html":"code size","sent":"2015-01-15T21:29:02.325Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b83121573df0f923452f1c","text":"SLOC","html":"SLOC","sent":"2015-01-15T21:29:05.886Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b8312a73b182a117e9cf94","text":"or
+        KB of code","html":"or KB of code","sent":"2015-01-15T21:29:14.908Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b8313b723506dd0c0ede6d","text":"Ah
+        ok. Yeah I believe that ","html":"Ah ok. Yeah I believe that ","sent":"2015-01-15T21:29:31.030Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b8317873b182a117e9cfaf","text":"Hopefully
+        I don''t come off as evangelizing Haskell. I''m not convinced that it is the
+        end all and be all.","html":"Hopefully I don&#39;t come off as evangelizing
+        Haskell. I&#39;m not convinced that it is the end all and be all.","sent":"2015-01-15T21:30:32.270Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b831a273b182a117e9cfbe","text":"I
+        think a lisp is probably more practical.","html":"I think a lisp is probably
+        more practical.","sent":"2015-01-15T21:31:14.593Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b831b2723506dd0c0ede91","text":"Haha
+        nah it''s cool","html":"Haha nah it&#39;s cool","sent":"2015-01-15T21:31:30.750Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b831b8573df0f923452f55","text":"Rust
+        will be a good mish-mash of the lot but I''m sure there are some problems
+        with it too.","html":"Rust will be a good mish-mash of the lot but I&#39;m
+        sure there are some problems with it too.","sent":"2015-01-15T21:31:36.443Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b831d5723506dd0c0ede9e","text":"Anyways,
+        I''m going home for the day. Chat with you later","html":"Anyways, I&#39;m
+        going home for the day. Chat with you later","sent":"2015-01-15T21:32:05.821Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b831fd573df0f923452f66","text":"Alright
+        see ya ","html":"Alright see ya ","sent":"2015-01-15T21:32:45.429Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1}]'
+    http_version: 
+  recorded_at: Mon, 19 Jan 2015 11:59:26 GMT
+- request:
+    method: get
+    uri: https://api.gitter.im/v1/rooms/54b7e136db8155e6700eb569/chatMessages?limit=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer redacted
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Expose-Headers:
+      - X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 19 Jan 2015 12:13:19 GMT
+      Etag:
+      - W/"SnLpQFUPIECV4wXL/HPuLQ=="
+      Server:
+      - nginx
+      Vary:
+      - Origin
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '99'
+      X-Ratelimit-Reset:
+      - '1421669659543'
+      X-Server-Id:
+      - app-003
+      X-Upstream:
+      - 127.0.0.1:5025
+      Content-Length:
+      - '5339'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":"54b8311e73b182a117e9cf90","text":"code size","html":"code size","sent":"2015-01-15T21:29:02.325Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b83121573df0f923452f1c","text":"SLOC","html":"SLOC","sent":"2015-01-15T21:29:05.886Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b8312a73b182a117e9cf94","text":"or
+        KB of code","html":"or KB of code","sent":"2015-01-15T21:29:14.908Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b8313b723506dd0c0ede6d","text":"Ah
+        ok. Yeah I believe that ","html":"Ah ok. Yeah I believe that ","sent":"2015-01-15T21:29:31.030Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b8317873b182a117e9cfaf","text":"Hopefully
+        I don''t come off as evangelizing Haskell. I''m not convinced that it is the
+        end all and be all.","html":"Hopefully I don&#39;t come off as evangelizing
+        Haskell. I&#39;m not convinced that it is the end all and be all.","sent":"2015-01-15T21:30:32.270Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b831a273b182a117e9cfbe","text":"I
+        think a lisp is probably more practical.","html":"I think a lisp is probably
+        more practical.","sent":"2015-01-15T21:31:14.593Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b831b2723506dd0c0ede91","text":"Haha
+        nah it''s cool","html":"Haha nah it&#39;s cool","sent":"2015-01-15T21:31:30.750Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b831b8573df0f923452f55","text":"Rust
+        will be a good mish-mash of the lot but I''m sure there are some problems
+        with it too.","html":"Rust will be a good mish-mash of the lot but I&#39;m
+        sure there are some problems with it too.","sent":"2015-01-15T21:31:36.443Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b831d5723506dd0c0ede9e","text":"Anyways,
+        I''m going home for the day. Chat with you later","html":"Anyways, I&#39;m
+        going home for the day. Chat with you later","sent":"2015-01-15T21:32:05.821Z","editedAt":null,"fromUser":{"id":"54b7e066db8155e6700eb55e","username":"Phyllostachys","displayName":"Jacob
+        Shaffer","url":"/Phyllostachys","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1503954?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1503954?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1},{"id":"54b831fd573df0f923452f66","text":"Alright
+        see ya ","html":"Alright see ya ","sent":"2015-01-15T21:32:45.429Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":1,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1}]'
+    http_version: 
+  recorded_at: Mon, 19 Jan 2015 12:13:19 GMT
+recorded_with: VCR 2.9.3

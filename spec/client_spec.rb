@@ -45,4 +45,45 @@ describe Gittr::Client do
       expect(room.users[0].role).to eq('admin')
     end
   end
+
+  it 'should list messages' do
+    VCR.use_cassette('list_messages') do
+      room_id = '54b7e136db8155e6700eb569'
+      messages = client.list_messages(room_id)
+      expect(messages).to_not be_nil
+      expect(messages.count).to eq(50)
+      expect(messages[0]['text']).to eq('thats pretty cool')
+      expect(messages[0]['fromUser']['username']).to eq('zoso10')
+    end
+  end
+
+  it 'should only list 10 messages' do
+    VCR.use_cassette('list_messages', record: :new_episodes) do
+      room_id = '54b7e136db8155e6700eb569'
+      messages = client.list_messages(room_id, limit: 10)
+      expect(messages.count).to eq(10)
+    end
+  end
+
+  it 'sends a message' do
+    VCR.use_cassette('send_message') do
+      room_id = '54b7e136db8155e6700eb569'
+      text = 'This is a sample message'
+      message = client.create_message(room_id, text)
+      expect(message).to_not be_nil
+      expect(message['text']).to eq(text)
+      expect(message['fromUser']['username']).to eq('zoso10')
+    end
+  end
+
+  it 'update a message' do
+    VCR.use_cassette('update_message') do
+      room_id = '54b7e136db8155e6700eb569'
+      message_id = '54bd1b4a573df0f92345a00f'
+      text = 'This message has been updated'
+      message = client.update_message(room_id, message_id, text)
+      expect(message).to_not be_nil
+      expect(message['error']).to eq('You can no longer edit this message')
+    end
+  end
 end

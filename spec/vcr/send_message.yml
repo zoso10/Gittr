@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.gitter.im/v1/rooms/54b7e136db8155e6700eb569/chatMessages
+    body:
+      encoding: UTF-8
+      string: '{"text":"This is a sample message"}'
+    headers:
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer redacted
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Expose-Headers:
+      - X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 19 Jan 2015 14:57:14 GMT
+      Server:
+      - nginx
+      Vary:
+      - Origin
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '99'
+      X-Ratelimit-Reset:
+      - '1421679494480'
+      X-Server-Id:
+      - app-001
+      X-Upstream:
+      - 127.0.0.1:5025
+      Content-Length:
+      - '492'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":"54bd1b4a573df0f92345a00f","text":"This is a sample message","html":"This
+        is a sample message","sent":"2015-01-19T14:57:14.492Z","editedAt":null,"fromUser":{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"},"unread":false,"readBy":0,"urls":[],"mentions":[],"issues":[],"meta":{},"v":1}'
+    http_version: 
+  recorded_at: Mon, 19 Jan 2015 14:57:14 GMT
+recorded_with: VCR 2.9.3
