@@ -20,4 +20,12 @@ describe Gittr::HashConstructor do
     expect(Klass.new.to_snake_case('foo_bar')).to eq('foo_bar')
     expect(Klass.new.to_snake_case('fooBar')).to eq('foo_bar')
   end
+
+  it 'creates and sets a non-existent instance variable' do
+    vars = {cat: 'cat', "dog" => 'dog'}
+    klass = Klass.new(vars)
+
+    expect(klass.cat).to eq('cat')
+    expect(klass.dog).to eq('dog')
+  end
 end
