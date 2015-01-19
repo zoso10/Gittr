@@ -32,17 +32,17 @@ module Gittr
 
     def list_messages(room_id, params={})
       response = self.class.get("/rooms/#{room_id}/chatMessages", headers: @headers, query: params)
-      response.parsed_response
+      response.parsed_response.map{ |message| Message.new(message) }
     end
 
     def create_message(room_id, text)
       response = self.class.post("/rooms/#{room_id}/chatMessages", headers: @headers, body: {text: text}.to_json)
-      response.parsed_response
+      Message.new(response.parsed_response)
     end
 
     def update_message(room_id, message_id, text)
       response = self.class.put("/rooms/#{room_id}/chatMessages/#{message_id}", headers: @headers, body: {text: text}.to_json)
-      response.parsed_response
+      Message.new(response.parsed_response)
     end
   end
 end

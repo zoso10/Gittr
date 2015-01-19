@@ -52,8 +52,8 @@ describe Gittr::Client do
       messages = client.list_messages(room_id)
       expect(messages).to_not be_nil
       expect(messages.count).to eq(50)
-      expect(messages[0]['text']).to eq('thats pretty cool')
-      expect(messages[0]['fromUser']['username']).to eq('zoso10')
+      expect(messages[0].text).to eq('thats pretty cool')
+      expect(messages[0].from_user.username).to eq('zoso10')
     end
   end
 
@@ -71,8 +71,8 @@ describe Gittr::Client do
       text = 'This is a sample message'
       message = client.create_message(room_id, text)
       expect(message).to_not be_nil
-      expect(message['text']).to eq(text)
-      expect(message['fromUser']['username']).to eq('zoso10')
+      expect(message.text).to eq(text)
+      expect(message.from_user.username).to eq('zoso10')
     end
   end
 
@@ -83,7 +83,7 @@ describe Gittr::Client do
       text = 'This message has been updated'
       message = client.update_message(room_id, message_id, text)
       expect(message).to_not be_nil
-      expect(message['error']).to eq('You can no longer edit this message')
+      expect(message.error).to eq('You can no longer edit this message')
     end
   end
 end
