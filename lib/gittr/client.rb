@@ -11,18 +11,15 @@ module Gittr
     end
 
     def rooms
-      response = self.class.get('/rooms', headers: @headers)
-      response.parsed_response.map{ |room| Room.new(room) }
+      map_get_response('/rooms'){ |room| Room.new(room) }
     end
 
     def rooms_users(room_id)
-      response = self.class.get("/rooms/#{room_id}/users", headers: @headers)
-      response.parsed_response.map{ |user| User.new(user) }
+      map_get_response("/rooms/#{room_id}/users"){ |user| User.new(user) }
     end
 
     def rooms_channels(room_id)
-      response = self.class.get("/rooms/#{room_id}/channels", headers: @headers)
-      response.parsed_response
+      map_get_response("/rooms/#{room_id}/channels"){ |channel| Channel.new(channel) }
     end
 
     def join_room(uri)
@@ -31,8 +28,7 @@ module Gittr
     end
 
     def list_messages(room_id, params={})
-      response = self.class.get("/rooms/#{room_id}/chatMessages", headers: @headers, query: params)
-      response.parsed_response.map{ |message| Message.new(message) }
+      map_get_response("/rooms/#{room_id}/chatMessages", params){ |message| Message.new(message) }
     end
 
     def create_message(room_id, text)
@@ -46,14 +42,12 @@ module Gittr
     end
 
     def get_user
-      response = self.class.get('/user', headers: @headers)
-      # There's only one user in the array
-      User.new(response.parsed_response[0])
+      # There's only one user in the array, silly...
+      get_response("/user"){ |user| User.new(user.first) }
     end
 
     def user_rooms(user_id)
-      response = self.class.get("/user/#{user_id}/rooms", headers: @headers)
-      response.parsed_response.map{ |room| Room.new(room) }
+      map_get_response("/user/#{user_id}/rooms"){ |room| Room.new(room) }
     end
 
     def mark_as_read(user_id, room_id)
@@ -62,18 +56,30 @@ module Gittr
     end
 
     def user_orgs(user_id)
-      response = self.class.get("/user/#{user_id}/orgs", headers: @headers)
-      response.parsed_response.map{ |org| Organization.new(org) }
+      map_get_response("/user/#{user_id}/orgs"){ |org| Organization.new(org) }
     end
 
     def user_repos(user_id)
-      response = self.class.get("/user/#{user_id}/repos", headers: @headers)
-      response.parsed_response.map{ |repo| Repository.new(repo) }
+      map_get_response("/user/#{user_id}/repos"){ |repo| Repository.new(repo) }
     end
 
     def user_channels(user_id)
-      response = self.class.get("/user/#{user_id}/channels", headers: @headers)
-      response.parsed_response.map{ |channel| Channel.new(channel) }
+      map_get_response("/user/#{user_id}/channels"){ |channel| Channel.new(channel) }
+    end
+
+  protected
+
+    def get_response(uri, params={}, &block)
+      response = self.class.get(uri, headers: @headers, query: params)
+      response = response.parsed_response
+      return response unless block_given?
+      yield response
+    end
+
+    def map_get_response(uri, params={}, &block)
+      get_response(uri, params).map do |response|
+        yield response
+      end
     end
   end
 end
