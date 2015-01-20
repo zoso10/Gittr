@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.gitter.im/v1/user
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer 804870a200eac2a8d44e20d1efbc8552c9265539
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Expose-Headers:
+      - X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 19 Jan 2015 19:12:23 GMT
+      Etag:
+      - W/"fd-56d0cefc"
+      Server:
+      - nginx
+      Vary:
+      - Origin
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '99'
+      X-Ratelimit-Reset:
+      - '1421694803805'
+      X-Server-Id:
+      - app-001
+      X-Upstream:
+      - 127.0.0.1:5025
+      Content-Length:
+      - '253'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":"54b7df5bdb8155e6700eb552","username":"zoso10","displayName":"Tyler
+        Ewing","url":"/zoso10","avatarUrlSmall":"https://avatars.githubusercontent.com/u/1211946?v=3&s=60","avatarUrlMedium":"https://avatars.githubusercontent.com/u/1211946?v=3&s=128"}]'
+    http_version: 
+  recorded_at: Mon, 19 Jan 2015 19:12:23 GMT
+recorded_with: VCR 2.9.3

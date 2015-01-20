@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.gitter.im/v1/user/54b7df5bdb8155e6700eb552/orgs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer 804870a200eac2a8d44e20d1efbc8552c9265539
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Expose-Headers:
+      - X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 19 Jan 2015 19:45:56 GMT
+      Etag:
+      - W/"2ea-b90a9db8"
+      Server:
+      - nginx
+      Vary:
+      - Origin
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '99'
+      X-Ratelimit-Reset:
+      - '1421696816363'
+      X-Server-Id:
+      - app-002
+      X-Upstream:
+      - 127.0.0.1:5025
+      Content-Length:
+      - '746'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":6183,"name":"thoughtbot","avatar_url":"https://avatars.githubusercontent.com/u/6183?v=3","room":{"id":"529cd337ed5ab0b3bf04e28f","name":"thoughtbot","topic":"","uri":"thoughtbot","oneToOne":false,"userCount":166,"unreadItems":0,"mentions":0,"lurk":false,"url":"/thoughtbot","githubType":"ORG","premium":false,"noindex":false,"v":259},"premium":false},{"id":13542,"name":"secondrotation","avatar_url":"https://avatars.githubusercontent.com/u/13542?v=3","room":null,"premium":false},{"id":6141935,"name":"TeamDogFace","avatar_url":"https://avatars.githubusercontent.com/u/6141935?v=3","room":null,"premium":false},{"id":9814618,"name":"GoTally","avatar_url":"https://avatars.githubusercontent.com/u/9814618?v=3","room":null,"premium":false}]'
+    http_version: 
+  recorded_at: Mon, 19 Jan 2015 19:45:56 GMT
+recorded_with: VCR 2.9.3

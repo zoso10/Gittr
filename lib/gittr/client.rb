@@ -44,5 +44,36 @@ module Gittr
       response = self.class.put("/rooms/#{room_id}/chatMessages/#{message_id}", headers: @headers, body: {text: text}.to_json)
       Message.new(response.parsed_response)
     end
+
+    def get_user
+      response = self.class.get('/user', headers: @headers)
+      # There's only one user in the array
+      User.new(response.parsed_response[0])
+    end
+
+    def user_rooms(user_id)
+      response = self.class.get("/user/#{user_id}/rooms", headers: @headers)
+      response.parsed_response.map{ |room| Room.new(room) }
+    end
+
+    def mark_as_read(user_id, room_id)
+      response = self.class.post("/user/#{user_id}/rooms/#{room_id}/unreadItems", headers: @headers)
+      response.parsed_response
+    end
+
+    def user_orgs(user_id)
+      response = self.class.get("/user/#{user_id}/orgs", headers: @headers)
+      response.parsed_response
+    end
+
+    def user_repos(user_id)
+      response = self.class.get("/user/#{user_id}/repos", headers: @headers)
+      response.parsed_response
+    end
+
+    def user_channels(user_id)
+      response = self.class.get("/user/#{user_id}/channels", headers: @headers)
+      response.parsed_response.map{ |channel| Channel.new(channel) }
+    end
   end
 end

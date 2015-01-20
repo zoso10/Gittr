@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.gitter.im/v1/user/54b7df5bdb8155e6700eb552/rooms/54b7e136db8155e6700eb569/unreadItems
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer 804870a200eac2a8d44e20d1efbc8552c9265539
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Access-Control-Expose-Headers:
+      - X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 19 Jan 2015 19:41:24 GMT
+      Server:
+      - nginx
+      Vary:
+      - Origin
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '99'
+      X-Ratelimit-Reset:
+      - '1421696544864'
+      Content-Length:
+      - '36'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"error":"No chat or mention items"}'
+    http_version: 
+  recorded_at: Mon, 19 Jan 2015 19:41:24 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.gitter.im/v1/user/54b7df5bdb8155e6700eb552/rooms
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer 804870a200eac2a8d44e20d1efbc8552c9265539
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Expose-Headers:
+      - X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 19 Jan 2015 19:19:08 GMT
+      Etag:
+      - W/"268-8d395810"
+      Server:
+      - nginx
+      Vary:
+      - Origin
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '99'
+      X-Ratelimit-Reset:
+      - '1421695208243'
+      X-Server-Id:
+      - app-002
+      X-Upstream:
+      - 127.0.0.1:5025
+      Content-Length:
+      - '616'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":"54bc01e3db8155e6700ecbca","name":"zoso10/Gittr","topic":"Gitter
+        REST API wrapper","uri":"zoso10/Gittr","oneToOne":false,"userCount":1,"unreadItems":0,"mentions":0,"lurk":false,"url":"/zoso10/Gittr","githubType":"REPO","security":"PUBLIC","premium":false,"noindex":false},{"id":"54b7e136db8155e6700eb569","name":"zoso10/skriv","topic":"Advanced
+        Note-Taking Application","uri":"zoso10/skriv","oneToOne":false,"userCount":2,"unreadItems":0,"mentions":0,"lastAccessTime":"2015-01-19T15:13:59.643Z","lurk":false,"url":"/zoso10/skriv","githubType":"REPO","security":"PUBLIC","premium":false,"noindex":false,"v":1}]'
+    http_version: 
+  recorded_at: Mon, 19 Jan 2015 19:19:08 GMT
+recorded_with: VCR 2.9.3
