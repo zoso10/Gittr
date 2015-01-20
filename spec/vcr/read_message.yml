@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/json
       Authorization:
-      - Bearer 804870a200eac2a8d44e20d1efbc8552c9265539
+      - Bearer redacted
       Content-Type:
       - application/json
   response:
