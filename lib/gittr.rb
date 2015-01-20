@@ -6,6 +6,7 @@ require 'gittr/room'
 require 'gittr/user'
 require 'gittr/channel'
 require 'gittr/message'
+require 'gittr/organization'
 require 'gittr/client'
 
 module Gittr
