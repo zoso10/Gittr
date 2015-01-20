@@ -23,7 +23,16 @@ Or install it yourself as:
 
 ## Usage
 
-Usage to come very soon ;)
+Creating a client with your API token.
+
+```ruby
+Gittr.configure do |config|
+  config.token = 'abc123'
+end
+client = Gittr::Client.new
+```
+
+The `Gittr::Client` implements all endpoints as described in the [Gittr Documentation](https://developer.gitter.im/docs/rest-api) for the REST API.
 
 ## Contributing
 
