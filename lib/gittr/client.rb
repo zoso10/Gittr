@@ -23,8 +23,7 @@ module Gittr
     end
 
     def join_room(uri)
-      response = self.class.post('/rooms', headers: @headers, query: {uri: uri})
-      Room.new(response.parsed_response)
+      post_response('/rooms', {uri: uri}){ |room| Room.new(room) }
     end
 
     def list_messages(room_id, params={})
@@ -32,13 +31,11 @@ module Gittr
     end
 
     def create_message(room_id, text)
-      response = self.class.post("/rooms/#{room_id}/chatMessages", headers: @headers, body: {text: text}.to_json)
-      Message.new(response.parsed_response)
+      post_response("/rooms/#{room_id}/chatMessages", {}, {text: text}){ |message| Message.new(message) }
     end
 
     def update_message(room_id, message_id, text)
-      response = self.class.put("/rooms/#{room_id}/chatMessages/#{message_id}", headers: @headers, body: {text: text}.to_json)
-      Message.new(response.parsed_response)
+      put_response("/rooms/#{room_id}/chatMessages/#{message_id}", {text: text}){ |message| Message.new(message) }
     end
 
     def get_user
@@ -51,8 +48,7 @@ module Gittr
     end
 
     def mark_as_read(user_id, room_id)
-      response = self.class.post("/user/#{user_id}/rooms/#{room_id}/unreadItems", headers: @headers)
-      response.parsed_response
+      post_response("/user/#{user_id}/rooms/#{room_id}/unreadItems")
     end
 
     def user_orgs(user_id)
@@ -80,6 +76,20 @@ module Gittr
       get_response(uri, params).map do |response|
         yield response
       end
+    end
+
+    def post_response(uri, params={}, body='', &block)
+      response = self.class.post(uri, headers: @headers, query: params, body: body.to_json)
+      response = response.parsed_response
+      return response unless block_given?
+      yield response
+    end
+
+    def put_response(uri, body='', &block)
+      response = self.class.put(uri, headers: @headers, body: body.to_json)
+      response = response.parsed_response
+      return response unless block_given?
+      yield response
     end
   end
 end
