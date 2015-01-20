@@ -63,7 +63,7 @@ module Gittr
 
     def user_orgs(user_id)
       response = self.class.get("/user/#{user_id}/orgs", headers: @headers)
-      response.parsed_response
+      response.parsed_response.map{ |org| Organization.new(org) }
     end
 
     def user_repos(user_id)

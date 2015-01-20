@@ -120,8 +120,8 @@ describe Gittr::Client do
       user_id = '54b7df5bdb8155e6700eb552'
       orgs = client.user_orgs(user_id)
       expect(orgs).to_not be_nil
-      expect(orgs[0]['name']).to eq('thoughtbot')
-      expect(orgs[1]['name']).to eq('secondrotation')
+      expect(orgs[0].name).to eq('thoughtbot')
+      expect(orgs[1].name).to eq('secondrotation')
     end
   end
 
