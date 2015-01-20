@@ -68,7 +68,7 @@ module Gittr
 
     def user_repos(user_id)
       response = self.class.get("/user/#{user_id}/repos", headers: @headers)
-      response.parsed_response
+      response.parsed_response.map{ |repo| Repository.new(repo) }
     end
 
     def user_channels(user_id)

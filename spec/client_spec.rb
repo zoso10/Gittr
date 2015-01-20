@@ -131,8 +131,8 @@ describe Gittr::Client do
       repos = client.user_repos(user_id)
       expect(repos).to_not be_nil
       expect(repos.count).to eq(236)
-      expect(repos[0]['name']).to eq('thoughtbot/hound')
-      expect(repos[0]['uri']).to eq('thoughtbot/hound')
+      expect(repos[0].name).to eq('thoughtbot/hound')
+      expect(repos[0].uri).to eq('thoughtbot/hound')
     end
   end
 
