@@ -32,7 +32,7 @@ end
 client = Gittr::Client.new
 ```
 
-The `Gittr::Client` implements all endpoints as described in the [Gittr Documentation](https://developer.gitter.im/docs/rest-api) for the REST API.
+The `Gittr::Client` implements all endpoints as described in the [Gitter Documentation](https://developer.gitter.im/docs/rest-api) for the REST API.
 
 ## Contributing
 
